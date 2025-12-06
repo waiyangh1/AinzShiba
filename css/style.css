@@ -1,1 +1,136 @@
+/* Basic Reset and Font Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
 
+/* Header/Navigation Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Menu Icon (The Three Lines) */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-icon {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+}
+
+/* Hero Section Layout (Image and Info Side-by-Side) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 50px;
+    gap: 80px; /* Space between the image and text */
+}
+
+/* Image Container and Circular Crop */
+.profile-image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden; /* Important for the circular crop */
+    border: 1px solid #eee; /* Optional subtle border */
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+/* Profile Text Styling */
+.profile-info {
+    text-align: left;
+}
+
+.greeting {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.name {
+    font-size: 3rem;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+/* Contact Button Styling */
+.actions {
+    margin-top: 25px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333; /* Dark background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #000;
+}
+
+/* Social Icons */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #000;
+    color: #fff;
+}
